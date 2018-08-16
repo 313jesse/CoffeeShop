@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Signup";
+}
+
+<h2>Signup</h2>
+
+<style> </style>
+
+    <form action="/Home/AddUser" method="post"> <label> First Name</label> <input type="text" name="FirstName" class="form-control" required pattern="^[a-zA-Z]{3,30}$" placeholder="Jane"/ >
+    <label> Last Name</label> <input type="text" name="LastName" class="form-control" required pattern="^[a-zA-Z]{3,30}$" placeholder="Doe"/ ><br/ >
+    <label> Phone Number</label> <input type="text" name="Phone" class="form-control" required pattern="^[0-9]{3}-[0-9]{3}-[0-9]{4}$" placeholder="123-123-1234"/ > <br/ > 
+    <input type="submit" value="Sign Up" class="btn-default"/ > </form>
+
